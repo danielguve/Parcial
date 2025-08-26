@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo Oscuro"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Switch
+            android:id="@+id/switchShowTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostrar Cronómetro"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dificultad"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbEasy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fácil (6 intentos)"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medio (4 intentos)"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Difícil (3 intentos)"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
